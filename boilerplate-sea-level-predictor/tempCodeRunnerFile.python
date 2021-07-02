@@ -1,0 +1,34 @@
+# import sys
+# fasta = {}
+# with open("C:/Users/Kittinun/Desktop/rosalind_gc.txt", "r") as file_one:
+#     for line in file_one:
+#         line = line.strip()
+#         if not line:
+#             continue
+#         if line.startswith(">"):
+#             active_sequence_name = line[1:]
+#             if active_sequence_name not in fasta:
+#                 fasta[active_sequence_name] = []
+#             continue
+#         sequence = line
+#         fasta[active_sequence_name].append(sequence)
+
+# GClist = {}
+# for keys, values in fasta.items():
+#     print(values)
+#     allcount = 0
+#     GCcount = 0
+#     for row in values:
+#         for letter in row:
+#             if letter == "G" or letter == "C":
+#                 GCcount += 1
+#             allcount +=1
+#         GClist[keys] = GCcount/allcount * 100
+
+# print(GClist)
+# print(max(GClist.items()))
+
+file = open("C:/Users/Kittinun/Desktop/rosalind_gc.txt", "r")
+blocks = file.readlines()
+# .split(">")[1:]
+print(blocks)
